@@ -1,0 +1,218 @@
+# =========================================================================
+# PRIMARY CLOCK DEFINITION (50 MHz)
+# =========================================================================
+# =========================================================================
+# PRIMARY CLOCK DEFINITION (50 MHz)
+# =========================================================================
+create_clock -period 20.000 -name sys_clk_50MHz -waveform {0.000 10.000} [get_ports ms_riscv32_clk_0]
+
+# =========================================================================
+# CLOCK & RESET PHYSICAL PIN ASSIGNMENTS (ZC702 Board)
+# =========================================================================
+set_property PACKAGE_PIN Y9    [get_ports ms_riscv32_clk_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_clk_0]
+
+set_property PACKAGE_PIN E15   [get_ports ms_riscv32_rst_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_rst_0]
+
+# =========================================================================
+# SCALAR INPUTS & OUTPUTS
+# =========================================================================
+set_property PACKAGE_PIN Y10   [get_ports mie_out_0]
+set_property IOSTANDARD LVCMOS18 [get_ports mie_out_0]
+set_property DRIVE 12 [get_ports mie_out_0]
+
+set_property PACKAGE_PIN Y11   [get_ports ms_riscv32_mp_dmwr_req_out_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_dmwr_req_out_0]
+set_property DRIVE 12 [get_ports ms_riscv32_mp_dmwr_req_out_0]
+
+set_property PACKAGE_PIN AB10  [get_ports ms_riscv32_mp_eirq_in_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_eirq_in_0]
+
+set_property PACKAGE_PIN AB11  [get_ports ms_riscv32_mp_hready_in_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_hready_in_0]
+
+set_property PACKAGE_PIN AA11  [get_ports ms_riscv32_mp_instr_hready_in_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_instr_hready_in_0]
+
+set_property PACKAGE_PIN AB12  [get_ports ms_riscv32_mp_sirq_in_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_sirq_in_0]
+
+set_property PACKAGE_PIN AA12  [get_ports ms_riscv32_mp_tirq_in_0]
+set_property IOSTANDARD LVCMOS18 [get_ports ms_riscv32_mp_tirq_in_0]
+
+set_property PACKAGE_PIN AB9   [get_ports unused_out1_0]
+set_property IOSTANDARD LVCMOS18 [get_ports unused_out1_0]
+set_property DRIVE 12 [get_ports unused_out1_0]
+
+# =========================================================================
+# DATA HTRANS BUS PIN LOCATIONS (2-bit: 0 to 1)
+# =========================================================================
+set_property PACKAGE_PIN F16   [get_ports {ms_riscv32_mp_data_htrans_out_0[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {ms_riscv32_mp_data_htrans_out_0[0]}]
+set_property DRIVE 12 [get_ports {ms_riscv32_mp_data_htrans_out_0[0]}]
+
+set_property PACKAGE_PIN F17   [get_ports {ms_riscv32_mp_data_htrans_out_0[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {ms_riscv32_mp_data_htrans_out_0[1]}]
+set_property DRIVE 12 [get_ports {ms_riscv32_mp_data_htrans_out_0[1]}]
+
+# =========================================================================
+# RESULT / STATUS BUS PIN LOCATIONS (140 Individual Bits: 0 to 139)
+# =========================================================================
+set_property PACKAGE_PIN U7    [get_ports {result_status_0[0]}]
+set_property PACKAGE_PIN W5    [get_ports {result_status_0[1]}]
+set_property PACKAGE_PIN W6    [get_ports {result_status_0[2]}]
+set_property PACKAGE_PIN W7    [get_ports {result_status_0[3]}]
+set_property PACKAGE_PIN V7    [get_ports {result_status_0[4]}]
+set_property PACKAGE_PIN U5    [get_ports {result_status_0[5]}]
+set_property PACKAGE_PIN U6    [get_ports {result_status_0[6]}]
+set_property PACKAGE_PIN V4    [get_ports {result_status_0[7]}]
+set_property PACKAGE_PIN V5    [get_ports {result_status_0[8]}]
+set_property PACKAGE_PIN U4    [get_ports {result_status_0[9]}]
+set_property PACKAGE_PIN T4    [get_ports {result_status_0[10]}]
+set_property PACKAGE_PIN T6    [get_ports {result_status_0[11]}]
+set_property PACKAGE_PIN R6    [get_ports {result_status_0[12]}]
+set_property PACKAGE_PIN AA4   [get_ports {result_status_0[13]}]
+set_property PACKAGE_PIN Y4    [get_ports {result_status_0[14]}]
+set_property PACKAGE_PIN AB6   [get_ports {result_status_0[15]}]
+set_property PACKAGE_PIN AB7   [get_ports {result_status_0[16]}]
+set_property PACKAGE_PIN AB4   [get_ports {result_status_0[17]}]
+set_property PACKAGE_PIN AB5   [get_ports {result_status_0[18]}]
+set_property PACKAGE_PIN AB1   [get_ports {result_status_0[19]}]
+set_property PACKAGE_PIN AB2   [get_ports {result_status_0[20]}]
+set_property PACKAGE_PIN AA6   [get_ports {result_status_0[21]}]
+set_property PACKAGE_PIN U14   [get_ports {result_status_0[22]}]
+set_property PACKAGE_PIN AB15  [get_ports {result_status_0[23]}]
+set_property PACKAGE_PIN AB14  [get_ports {result_status_0[24]}]
+set_property PACKAGE_PIN AA13  [get_ports {result_status_0[25]}]
+set_property PACKAGE_PIN Y13   [get_ports {result_status_0[26]}]
+set_property PACKAGE_PIN AA14  [get_ports {result_status_0[27]}]
+set_property PACKAGE_PIN Y14   [get_ports {result_status_0[28]}]
+set_property PACKAGE_PIN Y15   [get_ports {result_status_0[29]}]
+set_property PACKAGE_PIN W15   [get_ports {result_status_0[30]}]
+set_property PACKAGE_PIN W13   [get_ports {result_status_0[31]}]
+set_property PACKAGE_PIN V13   [get_ports {result_status_0[32]}]
+set_property PACKAGE_PIN V15   [get_ports {result_status_0[33]}]
+set_property PACKAGE_PIN V14   [get_ports {result_status_0[34]}]
+set_property PACKAGE_PIN AB16  [get_ports {result_status_0[35]}]
+set_property PACKAGE_PIN AA16  [get_ports {result_status_0[36]}]
+set_property PACKAGE_PIN AB17  [get_ports {result_status_0[37]}]
+set_property PACKAGE_PIN AA17  [get_ports {result_status_0[38]}]
+set_property PACKAGE_PIN V17   [get_ports {result_status_0[39]}]
+set_property PACKAGE_PIN U17   [get_ports {result_status_0[40]}]
+set_property PACKAGE_PIN U16   [get_ports {result_status_0[41]}]
+set_property PACKAGE_PIN U15   [get_ports {result_status_0[42]}]
+set_property PACKAGE_PIN Y16   [get_ports {result_status_0[43]}]
+set_property PACKAGE_PIN W16   [get_ports {result_status_0[44]}]
+set_property PACKAGE_PIN W18   [get_ports {result_status_0[45]}]
+set_property PACKAGE_PIN W17   [get_ports {result_status_0[46]}]
+set_property PACKAGE_PIN AA18  [get_ports {result_status_0[47]}]
+set_property PACKAGE_PIN Y18   [get_ports {result_status_0[48]}]
+set_property PACKAGE_PIN AA19  [get_ports {result_status_0[49]}]
+set_property PACKAGE_PIN Y19   [get_ports {result_status_0[50]}]
+set_property PACKAGE_PIN AB20  [get_ports {result_status_0[51]}]
+set_property PACKAGE_PIN AB19  [get_ports {result_status_0[52]}]
+set_property PACKAGE_PIN Y21   [get_ports {result_status_0[53]}]
+set_property PACKAGE_PIN Y20   [get_ports {result_status_0[54]}]
+set_property PACKAGE_PIN AB21  [get_ports {result_status_0[55]}]
+set_property PACKAGE_PIN AA21  [get_ports {result_status_0[56]}]
+set_property PACKAGE_PIN AB22  [get_ports {result_status_0[57]}]
+set_property PACKAGE_PIN AA22  [get_ports {result_status_0[58]}]
+set_property PACKAGE_PIN V19   [get_ports {result_status_0[59]}]
+set_property PACKAGE_PIN V18   [get_ports {result_status_0[60]}]
+set_property PACKAGE_PIN V20   [get_ports {result_status_0[61]}]
+set_property PACKAGE_PIN U20   [get_ports {result_status_0[62]}]
+set_property PACKAGE_PIN W21   [get_ports {result_status_0[63]}]
+set_property PACKAGE_PIN W20   [get_ports {result_status_0[64]}]
+set_property PACKAGE_PIN W22   [get_ports {result_status_0[65]}]
+set_property PACKAGE_PIN V22   [get_ports {result_status_0[66]}]
+set_property PACKAGE_PIN U22   [get_ports {result_status_0[67]}]
+set_property PACKAGE_PIN T22   [get_ports {result_status_0[68]}]
+set_property PACKAGE_PIN U21   [get_ports {result_status_0[69]}]
+set_property PACKAGE_PIN T21   [get_ports {result_status_0[70]}]
+set_property PACKAGE_PIN U19   [get_ports {result_status_0[71]}]
+set_property PACKAGE_PIN R15   [get_ports {result_status_0[72]}]
+set_property PACKAGE_PIN R16   [get_ports {result_status_0[73]}]
+set_property PACKAGE_PIN P16   [get_ports {result_status_0[74]}]
+set_property PACKAGE_PIN T18   [get_ports {result_status_0[75]}]
+set_property PACKAGE_PIN R18   [get_ports {result_status_0[76]}]
+set_property PACKAGE_PIN T19   [get_ports {result_status_0[77]}]
+set_property PACKAGE_PIN R19   [get_ports {result_status_0[78]}]
+set_property PACKAGE_PIN T17   [get_ports {result_status_0[79]}]
+set_property PACKAGE_PIN T16   [get_ports {result_status_0[80]}]
+set_property PACKAGE_PIN P18   [get_ports {result_status_0[81]}]
+set_property PACKAGE_PIN P17   [get_ports {result_status_0[82]}]
+set_property PACKAGE_PIN P15   [get_ports {result_status_0[83]}]
+set_property PACKAGE_PIN N15   [get_ports {result_status_0[84]}]
+set_property PACKAGE_PIN P21   [get_ports {result_status_0[85]}]
+set_property PACKAGE_PIN P20   [get_ports {result_status_0[86]}]
+set_property PACKAGE_PIN R21   [get_ports {result_status_0[87]}]
+set_property PACKAGE_PIN R20   [get_ports {result_status_0[88]}]
+set_property PACKAGE_PIN P22   [get_ports {result_status_0[89]}]
+set_property PACKAGE_PIN N22   [get_ports {result_status_0[90]}]
+set_property PACKAGE_PIN M22   [get_ports {result_status_0[91]}]
+set_property PACKAGE_PIN M21   [get_ports {result_status_0[92]}]
+set_property PACKAGE_PIN N20   [get_ports {result_status_0[93]}]
+set_property PACKAGE_PIN N19   [get_ports {result_status_0[94]}]
+set_property PACKAGE_PIN M20   [get_ports {result_status_0[95]}]
+set_property PACKAGE_PIN M19   [get_ports {result_status_0[96]}]
+set_property PACKAGE_PIN L19   [get_ports {result_status_0[97]}]
+set_property PACKAGE_PIN L18   [get_ports {result_status_0[98]}]
+set_property PACKAGE_PIN K20   [get_ports {result_status_0[99]}]
+set_property PACKAGE_PIN K19   [get_ports {result_status_0[100]}]
+set_property PACKAGE_PIN L22   [get_ports {result_status_0[101]}]
+set_property PACKAGE_PIN L21   [get_ports {result_status_0[102]}]
+set_property PACKAGE_PIN K21   [get_ports {result_status_0[103]}]
+set_property PACKAGE_PIN J20   [get_ports {result_status_0[104]}]
+set_property PACKAGE_PIN J22   [get_ports {result_status_0[105]}]
+set_property PACKAGE_PIN J21   [get_ports {result_status_0[106]}]
+set_property PACKAGE_PIN K18   [get_ports {result_status_0[107]}]
+set_property PACKAGE_PIN J18   [get_ports {result_status_0[108]}]
+set_property PACKAGE_PIN M16   [get_ports {result_status_0[109]}]
+set_property PACKAGE_PIN M15   [get_ports {result_status_0[110]}]
+set_property PACKAGE_PIN N18   [get_ports {result_status_0[111]}]
+set_property PACKAGE_PIN N17   [get_ports {result_status_0[112]}]
+set_property PACKAGE_PIN M17   [get_ports {result_status_0[113]}]
+set_property PACKAGE_PIN L17   [get_ports {result_status_0[114]}]
+set_property PACKAGE_PIN L16   [get_ports {result_status_0[115]}]
+set_property PACKAGE_PIN K16   [get_ports {result_status_0[116]}]
+set_property PACKAGE_PIN J17   [get_ports {result_status_0[117]}]
+set_property PACKAGE_PIN J16   [get_ports {result_status_0[118]}]
+set_property PACKAGE_PIN K15   [get_ports {result_status_0[119]}]
+set_property PACKAGE_PIN J15   [get_ports {result_status_0[120]}]
+set_property PACKAGE_PIN H15   [get_ports {result_status_0[121]}]
+set_property PACKAGE_PIN H18   [get_ports {result_status_0[122]}]
+set_property PACKAGE_PIN G22   [get_ports {result_status_0[123]}]
+set_property PACKAGE_PIN H22   [get_ports {result_status_0[124]}]
+set_property PACKAGE_PIN F22   [get_ports {result_status_0[125]}]
+set_property PACKAGE_PIN F21   [get_ports {result_status_0[126]}]
+set_property PACKAGE_PIN G21   [get_ports {result_status_0[127]}]
+set_property PACKAGE_PIN G20   [get_ports {result_status_0[128]}]
+set_property PACKAGE_PIN E20   [get_ports {result_status_0[129]}]
+set_property PACKAGE_PIN E19   [get_ports {result_status_0[130]}]
+set_property PACKAGE_PIN F19   [get_ports {result_status_0[131]}]
+set_property PACKAGE_PIN G19   [get_ports {result_status_0[132]}]
+set_property PACKAGE_PIN H20   [get_ports {result_status_0[133]}]
+set_property PACKAGE_PIN H19   [get_ports {result_status_0[134]}]
+set_property PACKAGE_PIN B22   [get_ports {result_status_0[135]}]
+set_property PACKAGE_PIN A21   [get_ports {result_status_0[136]}]
+set_property PACKAGE_PIN A22   [get_ports {result_status_0[137]}]
+set_property PACKAGE_PIN B20   [get_ports {result_status_0[138]}]
+set_property PACKAGE_PIN C20   [get_ports {result_status_0[139]}]
+
+# Apply IOSTANDARD and DRIVE globally using bus wildcards instead of a loop
+set_property IOSTANDARD LVCMOS18 [get_ports {result_status_0[*]}]
+set_property DRIVE 12 [get_ports {result_status_0[*]}]
+#################### the following below constraints are for Zynq_DDR_BRAM_Wrapper
+#################### this is completly different project//////////////////////////
+#############################################################################
+
+## Map transaction_finish_out_0 to ZC702 Onboard LED DS19 (Pin E15)
+#set_property PACKAGE_PIN E15 [get_ports transaction_finish_out_0]
+#set_property IOSTANDARD LVCMOS25 [get_ports transaction_finish_out_0]
+
+## Map unused_out_0 to ZC702 Onboard LED DS20 (Pin D15)
+#set_property PACKAGE_PIN D15 [get_ports unused_out_0]
+#set_property IOSTANDARD LVCMOS25 [get_ports unused_out_0]
+
+
