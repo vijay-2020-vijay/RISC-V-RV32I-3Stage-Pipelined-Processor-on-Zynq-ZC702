@@ -71,6 +71,8 @@ The design was verified by running a **400+ line hand-crafted RV32I assembly pro
 ![project_summery](Experimental_Screenshort_images/Screenshot%20%284454%29.png)
 ![simmuletion](Experimental_Screenshort_images/Screenshot%20%284471%29.png)
 ![Routing & placement](Experimental_Screenshort_images/Screenshot%20%284460%29.png)
+![Assembly Program (400+ lines)](Experimental_Screenshort_images/Screenshot%20%284421%29.png)
+![Instruction-wise Result Status Verification](Experimental_Screenshort_images/Screenshot%20%284423%29.png)
 
 
 
