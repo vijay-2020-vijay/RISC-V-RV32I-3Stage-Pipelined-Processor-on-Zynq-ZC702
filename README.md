@@ -1,6 +1,9 @@
 # RISC-V-RV32I-3Stage-Pipelined-Processor-on-Zynq-ZC702
 3-stage pipelined RV32I RISC-V processor implemented in Verilog RTL and deployed on the Xilinx Zynq-7000 (ZC702) FPGA. Features Harvard memory architecture, operand forwarding, CSR-interrupt-aware stall handling, and per-instruction result verification. Bitstream generated, .xsa exported for Vitis. PS-PL integration &amp; Renode co-simulation .
 
+## Full Project Files
+[Download Project ZIP](https://drive.google.com/file/d/1jkIeF5M_d4cmj3Kb4_aSepdQTVc1jhhW/view?usp=sharing)
+
 Designed & Verified a 3-Stage Pipelined RV32I RISC-V Processor — Full RTL, Deployed on Zynq-7000 (ZC702)
 Over the past few months, I built a complete 3-stage pipelined RISC-V (RV32I) processor from scratch in Verilog — from ISA-level architecture down to FPGA bitstream — and integrated it with the ARM Cortex-A9 (PS) on a Xilinx Zynq-7000 ZC702 platform.
 
