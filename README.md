@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 RISC-V RV32I 3-Stage Pipelined Processor on Zynq-7000 (ZC702)
+# RISC-V RV32I 3-Stage Pipelined Processor on Zynq-7000 (ZC702)
 
 ### A custom, fully synthesizable 3-stage pipelined RISC-V (RV32I) core with Machine-Mode CSRs and a BRAM-backed on-chip hardware trace logger
 
